@@ -1,87 +1,91 @@
-/* Importing Google Font */
+/* Applying a bold gradient background */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f5;
-    color: #333;
-    min-height: 100vh;
+    background: linear-gradient(135deg, #ff7a18, #af002d 71%);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
 }
 
-/* Header Section */
+/* Header styling */
 header {
-    width: 100%;
-    border-bottom: 2px solid #007bff;
-}
-
-.logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
+/* Logo styling */
 .logo {
-    width: 70px;
+    width: 80px;
     height: auto;
     margin-right: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
 }
 
+/* Logo hover effect */
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Company name styling */
 .company-name {
-    font-size: 32px;
-    color: #007bff;
+    font-size: 48px;
     font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-/* Main Content */
+/* Main content styling */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
+/* Message styling */
 .message h2 {
-    font-size: 48px;
-    color: #333;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .message p {
-    font-size: 18px;
-    color: #555;
+    font-size: 20px;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
-/* Link Styling */
+/* Link styling */
 a {
-    color: #007bff;
-    text-decoration: none;
+    color: #ffd700;
     font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #fff;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .logo {
-        width: 50px;
-    }
-
     .company-name {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .message h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .message p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
