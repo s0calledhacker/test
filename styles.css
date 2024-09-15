@@ -1,9 +1,7 @@
 /* Importing Google Font */
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fcb69f, #ff6a88, #fed6e3); /* Colorful background */
-    background-size: 300% 300%;
-    animation: gradientAnimation 15s ease infinite;
+    background: linear-gradient(135deg, #ff9966, #ff5e62); /* Vibrant gradient background */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -13,13 +11,6 @@ body {
     text-align: center;
 }
 
-/* Gradient Animation */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 /* Header Section */
 header {
     width: 100%;
@@ -27,7 +18,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .logo-container {
@@ -35,32 +26,34 @@ header {
     align-items: center;
 }
 
+/* Rounded logo effect */
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: auto;
     margin-right: 15px;
-    border-radius: 15px; /* Rounded logo corners */
+    border-radius: 12px; /* Slightly rounded corners */
     transition: transform 0.3s ease-in-out;
 }
 
-/* Logo hover effect */
 .logo:hover {
     transform: scale(1.1);
 }
 
-/* Company name styling */
+/* NexGuardians Text Styling */
 .company-name {
     font-size: 42px;
     font-weight: bold;
-    display: inline-flex;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
 }
 
 .nex {
-    color: #8b4513; /* Ash brown for Nex */
+    color: #a67c52; /* Ash brown for 'Nex' */
 }
 
 .guardians {
-    color: #87cefa; /* Sky blue for Guardians */
+    color: #00bfff; /* Sky blue for 'Guardians' */
 }
 
 /* Main content styling */
@@ -76,7 +69,7 @@ main {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #ffd700;
+    color: #ffdead; /* Lighter yellow color */
 }
 
 .message p {
@@ -93,13 +86,11 @@ main {
 
 .social-links h3 {
     font-size: 24px;
-    color: #ffd700;
+    color: #ffdead;
     margin-bottom: 15px;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -107,7 +98,7 @@ main {
 .social-icon {
     width: 50px;
     height: 50px;
-    border-radius: 15px; /* Rounded corners for all icons */
+    border-radius: 50%; /* Round all logos */
     transition: transform 0.3s ease, opacity 0.3s ease;
     filter: grayscale(100%);
 }
@@ -115,24 +106,13 @@ main {
 .social-icon:hover {
     transform: scale(1.2);
     filter: grayscale(0%);
-}
-
-/* Link Styling */
-a {
-    color: #ffd700;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
+    opacity: 1;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
     .logo {
-        width: 60px;
-        height: 60px;
+        width: 50px;
     }
 
     .company-name {
@@ -150,25 +130,5 @@ a:hover {
     .social-icon {
         width: 40px;
         height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .company-name {
-        font-size: 28px;
-    }
-
-    .message h2 {
-        font-size: 24px;
-    }
-
-    .social-icon {
-        width: 35px;
-        height: 35px;
     }
 }
