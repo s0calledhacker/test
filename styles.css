@@ -1,175 +1,131 @@
 /* Importing Google Font */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'), linear-gradient(135deg, #ff9a9e, #fad0c4, #ff6a88, #fcb69f, #fed6e3); /* Textured colorful background */
-    background-size: 300% 300%;
-    animation: gradientAnimation 15s ease infinite;
-    color: #000; /* Set text to black for better readability */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'), linear-gradient(135deg, #ff9a9e, #fad0c4, #ff6a88, #fcb69f, #fed6e3); /* Textured colorful background */
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #000; /* Set text to black for better readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
 }
 
 /* Gradient Animation */
 @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0%   
+ 50%; }
 }
 
 /* Header Section */
 header {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
-    border-radius: 15px; /* Rounded logo corners */
-    transition: transform 0.3s ease-in-out;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: 15px; /* Rounded logo corners */
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Logo hover effect */
 .logo:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Company name styling */
 .company-name {
-    font-size: 42px;
-    font-weight: bold;
-    display: inline-flex;
-    color: #000; /* Black text for company name */
+  font-size: 42px;
+  font-weight: bold;
+  display: inline-flex;
+  color: #000; /* Black text for company name */
 }
 
 .nex {
-    color: #8b4513; /* Ash brown for Nex */
+  color: #8b4513; /* Ash brown for Nex */
 }
 
 .guardians {
-    color: #87cefa; /* Sky blue for Guardians */
+  color: #87cefa; /* Sky blue for Guardians */
 }
 
 /* Main content styling */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Message styling */
 .message h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #1a1a1a; /* Darker color for the Coming Soon text */
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1a1a1a; /* Darker color for the Coming Soon text */
 }
 
 .message p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #1a1a1a; /* Darker text for better readability */
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #1a1a1a; /* Darker text for better readability */
 }
 
 /* Social Links Section */
 .social-links {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .social-links h3 {
-    font-size: 24px;
-    color: #1a1a1a; /* Darker text for headings */
-    margin-bottom: 15px;
+  font-size: 24px;
+  color: #1a1a1a; /* Darker text for headings */
+  margin-bottom: 15px;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Social Icon Styling */
 .social-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px; /* Rounded corners for all icons */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    filter: grayscale(100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px; /* Rounded corners for all icons */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: grayscale(100%);
 }
 
 .social-icon:hover {
-    transform: scale(1.2);
-    filter: grayscale(0%);
+  transform: scale(1.2);
+  filter: grayscale(0%);
 }
 
 /* Link Styling */
 a {
-    color: #1a1a1a;
-    font-weight: bold;
-    text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #000;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .company-name {
-        font-size: 32px;
-    }
-
-    .message h2 {
-        font-size: 28px;
-    }
-
-    .message p {
-        font-size: 18px;
-    }
-
-    .social-icon {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .company-name {
-        font-size: 28px;
-    }
-
-    .message h2 {
-        font-size: 24px;
-    }
-
-    .social-icon {
-        width: 35px;
-        height: 35px;
-    }
+  color: #000;
 }
